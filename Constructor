@@ -1,0 +1,52 @@
+package Basic;
+
+public class product {
+	
+	String name ;
+	double price ;
+	String category ;
+	
+	product(){
+		name = "iphone";
+		price = 1500000;
+		category = "mobail" ;
+		System.out.println("name: "+name +" "+ "price: "+price+" "+"category: "+category);
+		
+		
+	}
+	
+	product(String name , double price , String category){
+		this.name = name ;
+		this. price = price ;
+		this.category = category ;
+		System.out.println("name: "+name +" "+ "price: "+price+" "+"category: "+category);
+	}
+	 
+	product(double price , String name , String category ){
+		this. price = price ;
+		this.name = name ;
+		this.category = category ;
+		System.out.println("price: "+price+" "+" name " +name +"category: "+category);
+		
+	}
+	product(String category , String name , double price  ){
+		this.category = category ;
+		this.name = name ;
+		this. price = price ;
+		System.out.println("name: "+name +" "+ "price: "+price+" "+"category: "+category);
+		
+		
+		
+	}
+	public static void main(String[] args) {
+		product obj = new product () ;
+		
+		product obj1 = new product ("vivo",200000,"mobail");
+		
+		product obj2 = new product ("MI",15460,"galaxy");
+		
+		product obj3 = new product ("Channel",50025,"Star");
+	}
+	
+	
+}
